@@ -1,0 +1,6 @@
+@DotnetProject.Api_HostAddress = http://localhost:5052
+
+GET {{DotnetProject.Api_HostAddress}}/api/userinfo/project?userName=sirichad.kat
+Accept: application/json
+
+###

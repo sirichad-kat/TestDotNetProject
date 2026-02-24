@@ -1,0 +1,33 @@
+﻿{
+  "key": "c2",
+  "desc": "GetUserProjectUserIsEmpty_Should_ReturnBadRequest",
+  "refs": [ "C2" ],
+  "withRequest": {
+    "method": "get",
+    "path": "/api/userinfo/project",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "query": {},
+    "body": {}
+  },
+  "withResponse": {
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "type": "https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1",
+      "title": "Bad Request",
+      "status": 400,
+      "instance": "/api/userinfo/project",
+      "traceId": "40000004-0006-fa00-b63f-84710c7967bb",
+      "detail": "UserName is required.",
+      "errors": [
+        {
+          "name": "userName",
+          "reason": "UserName is required."
+        }
+      ]
+    }
+  }
+}

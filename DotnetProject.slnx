@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docs/01_PROJECT_OVERVIEW.md" />
+    <File Path="docs/02_CODING_GUIDE.md" />
+  </Folder>
+  <Project Path="../../FeedCommonLib/FeedCommonLib.Application.Abstractions/FeedCommonLib.Application.Abstractions.csproj" />
+  <Project Path="../../SmartLims/ApiIntegrationPOC/src/IntegrationTestLib/IntegrationTestLib.csproj" />
+  <Project Path="DotnetProject.Api/DotnetProject.Api.csproj" Id="79e319c0-6334-4e0b-bef6-0b05da05b807">
+    <BuildDependency Project="DotnetProject.Infrastructure/DotnetProject.Infrastructure.csproj" />
+  </Project>
+  <Project Path="DotnetProject.Application/DotnetProject.Application.csproj">
+    <BuildDependency Project="DotnetProject.Infrastructure.Postgresql/DotnetProject.Infrastructure.Postgresql.csproj" />
+  </Project>
+  <Project Path="DotnetProject.Core/DotnetProject.Core.csproj" />
+  <Project Path="DotnetProject.Infrastructure.Postgresql/DotnetProject.Infrastructure.Postgresql.csproj" Id="8e54572b-db85-4555-a2c4-6b914f5a931e">
+    <BuildDependency Project="DotnetProject.Infrastructure/DotnetProject.Infrastructure.csproj" />
+  </Project>
+  <Project Path="DotnetProject.Infrastructure/DotnetProject.Infrastructure.csproj" />
+  <Project Path="DotnetProject.IntegrationTest/DotnetProject.IntegrationTest.csproj" Id="f6a4ca6a-3636-405e-a101-627ea8683a50" />
+  <Project Path="DotnetProject.Test/DotnetProject.Test.csproj" Id="3bfeca4a-88f6-4383-a1c3-970775f56fda">
+    <BuildDependency Project="DotnetProject.Infrastructure.Postgresql/DotnetProject.Infrastructure.Postgresql.csproj" />
+  </Project>
+</Solution>

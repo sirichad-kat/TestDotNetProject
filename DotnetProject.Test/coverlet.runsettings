@@ -1,0 +1,16 @@
+<RunSettings>
+  <RunConfiguration>
+    <ResultsDirectory>./CodeCoverageReports</ResultsDirectory>
+  </RunConfiguration>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <Format>opencover</Format>
+          <Include>[DotnetProject.Application]*,[DotnetProject.Core]*</Include>
+          <ExcludeByFile>**/Entities/*.cs,**/*Dto.cs,**/*Record.cs,**/obj/**/*.cs,**/ApplicationExtensions.cs</ExcludeByFile>
+		</Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

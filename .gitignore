@@ -1,0 +1,16 @@
+/DotnetProject.Api/bin/Release
+/DotnetProject.Api/obj
+/DotnetProject.Core/obj
+/DotnetProject.Api/bin
+/DotnetProject.Infrastructure/obj
+/DotnetProject.IntegrationTest/bin
+/DotnetProject.Test/bin
+/DotnetProject.Api/logs
+/DotnetProject.Application/bin
+/DotnetProject.Application/obj
+/DotnetProject.Core/bin
+/DotnetProject.Infrastructure.Postgresql/obj
+/DotnetProject.Infrastructure/bin
+/DotnetProject.Infrastructure.Postgresql/bin
+/DotnetProject.IntegrationTest/obj
+/DotnetProject.Test/obj

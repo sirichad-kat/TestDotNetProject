@@ -1,0 +1,56 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5052"
+    },
+    "https": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7010;http://localhost:5052"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "8081",
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        //"OTEL_EXPORTER_OTLP_ENDPOINT": "https://alloy-grpc-eks.feed-nonprd.axons.in.th",
+        //"OTEL_EXPORTER_OTLP_PROTOCOL": "grpc",
+        //"OTEL_EXPORTER_OTLP_TRACES_ENDPOINT": "https://alloy-grpc-eks.feed-nonprd.axons.in.th/v1/traces",
+        //"OTEL_METRICS_EXPORTER": "none",
+        //"OTEL_TRACES_EXPORTER": "otlp",
+        //"OTEL_SERVICE_NAME": "DotnetProject.Api",
+        //"SERVICE_NAME": "DotnetProject.Api",
+        //"OTEL_SERVICE_VERSION": "1.0.0",
+        //"PROMETHEUS_METRICS_PORT": "9464"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,  
+    "iisExpress": {
+      "applicationUrl": "http://localhost:13892",
+      "sslPort": 44345
+    }
+  }
+}

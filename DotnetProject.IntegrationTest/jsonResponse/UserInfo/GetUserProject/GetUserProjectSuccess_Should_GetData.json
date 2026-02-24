@@ -1,0 +1,58 @@
+﻿{
+  "key": "c1",
+  "desc": "GetUserProjectSuccess_Should_GetData",
+  "refs": [ "C1" ],
+  "withRequest": {
+    "method": "get",
+    "path": "/api/userinfo/project",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "query": {
+      "username": "test.usr"
+    },
+    "body": {}
+  },
+  "withResponse": {
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "statusCode": 200,
+      "isSuccess": true,
+      "traceId": "2622139be82ab99018112979423b0b07",
+      "codeResult": "SUC200",
+      "message": "Request completed successfully",
+      "dataResult": [
+        {
+          "year": 2025,
+          "projectCode": "TEST PROJECT1",
+          "projectName": "TEST PROJECT1",
+          "subTeam": "TEST",
+          "memberId": 99998,
+          "username": "test.usr",
+          "fullName": "TEST USER",
+          "email": "test.usr@axonstech.com",
+          "role": "DEV",
+          "department": "DM Feed",
+          "squadName": "TEST",
+          "status": null
+        },
+        {
+          "year": 2025,
+          "projectCode": "TEST PROJECT2",
+          "projectName": "TEST PROJECT2",
+          "subTeam": "TEST",
+          "memberId": 99998,
+          "username": "test.usr",
+          "fullName": "TEST USER",
+          "email": "test.usr@axonstech.com",
+          "role": "DEV",
+          "department": "DM Feed",
+          "squadName": "TEST",
+          "status": null
+        }
+      ]
+    }
+  }
+}
